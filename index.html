@@ -636,6 +636,10 @@
     backSpeed: 50,
     loop: true
   });
+document.querySelectorAll('.progress-bar').forEach(bar => {
+    let value = bar.getAttribute('aria-valuenow');
+    bar.style.width = value + '%';
+});
 </script>
 
 </body>
